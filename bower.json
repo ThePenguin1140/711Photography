@@ -11,6 +11,7 @@
     "angular-loader": "~1.5.0",
     "angular-mocks": "~1.5.0",
     "html5-boilerplate": "^5.3.0",
-    "gridster": "^0.5.6"
+    "gridster": "^0.5.6",
+    "semantic": "semantic-ui#^2.1.8"
   }
 }
