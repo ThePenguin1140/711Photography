@@ -23,7 +23,7 @@
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+    "start": "node index.js",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js --single-run",
@@ -38,5 +38,9 @@
   },
   "homepage": "https://github.com/angular/angular-seed#readme",
   "main": "app/index.html",
-  "author": "Jason Wuertz"
+  "author": "Jason Wuertz",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  }
 }
