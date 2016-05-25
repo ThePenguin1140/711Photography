@@ -7,6 +7,18 @@ ul {
   list-style-type: none;
 }
 
+.portrait {
+    height: 100%;
+}
+
+.landscape {
+    width: 100%;
+}
+
+li {
+    overflow: hidden;
+    position: relative;
+}
 
 /*/
 /* demo
