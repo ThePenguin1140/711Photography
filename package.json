@@ -8,6 +8,11 @@
     "url": "git+https://github.com/angular/angular-seed.git"
   },
   "license": "MIT",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  },
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
@@ -38,9 +43,5 @@
   },
   "homepage": "https://github.com/angular/angular-seed#readme",
   "main": "app/index.html",
-  "author": "Jason Wuertz",
-  "dependencies": {
-    "connect": "^3.4.1",
-    "serve-static": "^1.10.2"
-  }
+  "author": "Jason Wuertz"
 }
