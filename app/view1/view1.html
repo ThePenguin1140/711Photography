@@ -1,5 +1,12 @@
 <div class="gridster">
     <ul>
+        <li ng-repeat="image in images"
+            data-row="{{$index+1}}"
+            data-col="{{$index%3+1}}"
+            data-sizex="1"
+            data-sizey="1">
+            <img ng-src="/images/{{image}}" alt="">
+        </li>
         <li data-row="1" data-col="1" data-sizex="1" data-sizey="1"></li>
         <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"></li>
         <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
