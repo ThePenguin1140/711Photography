@@ -21,6 +21,18 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  <div class="ui secondary pointing menu">
+    <a href="#" class="active item" onclick="goHome()">Home</a>
+    <a href="#" class="item" onclick="goContact()">Contact</a>
+    <div class="right menu">
+      <!--<a href="#" class="ui item" id="loadButton">Load</a>-->
+      <!--<a href="#" class="ui item" id="saveButton">Save</a>-->
+      <a href="#" class="ui item">
+        Login
+      </a>
+    </div>
+  </div>
+
   <div class="gridster">
     <ul></ul>
   </div>
@@ -29,11 +41,11 @@
   -->
 
   <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
   <script src="../bower_components/gridster/dist/jquery.gridster.min.js"></script>
   <script src="../bower_components/lodash/dist/lodash.min.js"></script>
   <script src="../bower_components/jquery-bullseye/src/jquery-bullseye.js"></script>
   <script src="../bower_components/semantic/dist/semantic.min.js"></script>
+  <script src="../bower_components/async/dist/async.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

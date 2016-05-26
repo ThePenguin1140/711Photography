@@ -9,6 +9,7 @@
     "html5-boilerplate": "^5.3.0",
     "gridster": "^0.5.6",
     "semantic": "semantic-ui#^2.1.8",
-    "jquery-bullseye": "*"
+    "jquery-bullseye": "*",
+    "lodash": "^4.13.1"
   }
 }
