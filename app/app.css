@@ -15,7 +15,7 @@ ul {
     width: 100%;
 }
 
-li {
+.gs-w {
     overflow: hidden;
     position: relative;
 }

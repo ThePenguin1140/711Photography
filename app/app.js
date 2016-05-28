@@ -2,6 +2,7 @@
 
 $(function () {
     var gridster = $(".gridster ul").gridster({
+        widget_selector: "image-container",
         widget_margins: [10, 10],
         widget_base_dimensions: [50, 50],
         resize: {
@@ -61,11 +62,7 @@ $(function () {
     $.get('/state', function (res) {
         _(res).forEach(function (item) {
             gridster.add_widget(
-                '<li class="new">' +
-                '<div class="portrait landscape">' +
-                '<img class="portrait" src="/images/' + item.url + '"/>' +
-                '</div>' +
-                '</li>',
+                '<image-container class="new" url="' + item.url + '"></image-container>',
                 item.size_x,
                 item.size_y,
                 item.col,
