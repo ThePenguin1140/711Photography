@@ -14,7 +14,20 @@ $(function () {
     };
 
     $('#saveButton').click(function () {
-
+        var res = _.map($('.grid-stack .grid-stack-item:visible'), function (el) {
+            el = $(el);
+            var node = el.data('_gridstack_node');
+            return {
+                url: el.attr('url'),
+                x: node.x,
+                y: node.y,
+                size_x: node.width,
+                size_y: node.height
+            };
+        });
+        $.post('/state', JSON.stringify(res), function( response ) {
+            console.log( response );
+        })
     });
 
     $('#loadButton').click(function () {
