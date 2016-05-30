@@ -3,7 +3,6 @@
 $(function () {
 
     $('.grid-stack').gridstack({
-        cellHeight: 40
     });
 
     var goHome = function () {
