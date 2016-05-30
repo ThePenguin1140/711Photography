@@ -15,6 +15,10 @@
     position: relative;
 }
 
+.ui-resizable-handle.ui-resizable-se.ui-icon.ui-icon-gripsmall-diagonal-se {
+  right: 1px;
+}
+
 /*/
 /* demo
 /*/
