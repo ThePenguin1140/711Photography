@@ -25,7 +25,9 @@ $(function () {
                 size_y: node.height
             };
         });
-        $.post('/state', JSON.stringify(res), function( response ) {
+        $.post('/state', {
+            state: res
+        }, function( response ) {
             console.log( response );
         })
     });
