@@ -22,7 +22,8 @@ $(function () {
                 x: node.x,
                 y: node.y,
                 size_x: node.width,
-                size_y: node.height
+                size_y: node.height,
+                autoPosition: false
             };
         });
         $.post('/state', {
@@ -39,15 +40,17 @@ $(function () {
     $.get('/state', function (res) {
         var grid = $('.grid-stack').data('gridstack');
         grid.batchUpdate();
+        res = _.sortBy(res, ['x', 'y']);
+        console.log(res);
         _(res).forEach(function (item) {
             var el = $('<image-container class="new grid-stack-item" url="' + item.url + '"></image-container>');
             grid.addWidget(
                 el,
-                item.col,
-                item.row,
+                item.x,
+                item.y,
                 item.size_x,
                 item.size_y,
-                true
+                item.autoPosition
             );
             el.children('div').bullseye({
                 'fadeEffect': false

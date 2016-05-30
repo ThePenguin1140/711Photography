@@ -21,10 +21,11 @@ app.get('/state', function (req, res, next) {
             lastState = _.fill(
                 Array(items.length),
                 {
-                    row: 0,
-                    col: 0,
+                    x: 0,
+                    y: 0,
                     size_x: 2,
-                    size_y: 2
+                    size_y: 2,
+                    autoPosition: true
                 }
             );
             lastState = _.merge(
