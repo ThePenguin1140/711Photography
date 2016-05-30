@@ -1,18 +1,13 @@
-.gridster * {
-  margin:0;
-  padding:0;
-}
-
-ul {
-  list-style-type: none;
-}
-
 .portrait {
     height: 100%;
 }
 
 .landscape {
     width: 100%;
+}
+
+.grid-stack-item {
+  overflow: hidden;
 }
 
 .gs-w {
